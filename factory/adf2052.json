@@ -1,0 +1,15 @@
+{
+	"name": "adf2052",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6ae32c6c-d82f-42ed-b5c0-1b146cba4b80",
+		"tenantId": "6bf96945-a593-4f62-a679-e992a3304728"
+	}
+}
