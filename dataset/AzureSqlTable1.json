@@ -1,0 +1,82 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "source_system",
+				"type": "varchar"
+			},
+			{
+				"name": "entity_name",
+				"type": "varchar"
+			},
+			{
+				"name": "source_type",
+				"type": "varchar"
+			},
+			{
+				"name": "source_path",
+				"type": "varchar"
+			},
+			{
+				"name": "destination_container",
+				"type": "varchar"
+			},
+			{
+				"name": "destination_folder",
+				"type": "varchar"
+			},
+			{
+				"name": "file_name",
+				"type": "varchar"
+			},
+			{
+				"name": "file_format",
+				"type": "varchar"
+			},
+			{
+				"name": "watermark_column",
+				"type": "varchar"
+			},
+			{
+				"name": "load_type",
+				"type": "varchar"
+			},
+			{
+				"name": "is_active",
+				"type": "bit"
+			},
+			{
+				"name": "notebook_name",
+				"type": "varchar"
+			},
+			{
+				"name": "created_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "modified_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "metadata_config"
+		}
+	}
+}
