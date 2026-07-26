@@ -128,7 +128,15 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"storedProcedureName": "[dbo].[usp_UpdateWatermark]"
+								"storedProcedureName": "[dbo].[usp_UpdateWatermark]",
+								"storedProcedureParameters": {
+									"entity_name": {
+										"type": "String"
+									},
+									"watermark_column": {
+										"type": "String"
+									}
+								}
 							},
 							"linkedServiceName": {
 								"referenceName": "AzureSqlDatabase1",
