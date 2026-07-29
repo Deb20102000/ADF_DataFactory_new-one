@@ -247,7 +247,7 @@
 									},
 									"RowRead": {
 										"value": {
-											"value": "@activity('Source to destination transfer').output.RowsRead",
+											"value": "@activity('Source to destination transfer').output.rowsRead",
 											"type": "Expression"
 										},
 										"type": "Int64"
