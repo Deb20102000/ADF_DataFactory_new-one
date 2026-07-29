@@ -254,7 +254,7 @@
 									},
 									"RowsWritten": {
 										"value": {
-											"value": "@activity('Source to destination transfer').output.RowsWritten",
+											"value": "@activity('Source to destination transfer').output.rowsCopied",
 											"type": "Expression"
 										},
 										"type": "Int64"
