@@ -234,7 +234,7 @@
 							"typeProperties": {
 								"storedProcedureName": "[dbo].[usp_UpdateAudit]",
 								"storedProcedureParameters": {
-									"Runid": {
+									"RunId": {
 										"value": {
 											"value": "@pipeline().RunId",
 											"type": "Expression"
@@ -245,7 +245,7 @@
 										"value": "SUCESS",
 										"type": "String"
 									},
-									"RowRead": {
+									"RowsRead": {
 										"value": {
 											"value": "@activity('Source to destination transfer').output.rowsRead",
 											"type": "Expression"
