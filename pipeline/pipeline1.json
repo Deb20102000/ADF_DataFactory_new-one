@@ -290,7 +290,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/hello.dataengineer@outlook.com/01_Landing_To_Bronze",
+								"notebookPath": "/Users/hello.dataengineer@outlook.com/ADF_DataFactory_new-one/Databricks notebooks/01_Landing_To_Bronze",
 								"baseParameters": {
 									"entity_name": {
 										"value": "@item().entity_name",
