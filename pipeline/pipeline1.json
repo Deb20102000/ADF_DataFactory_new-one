@@ -124,7 +124,7 @@
 							"type": "SqlServerStoredProcedure",
 							"dependsOn": [
 								{
-									"activity": "Source to destination transfer",
+									"activity": "Notebook1",
 									"dependencyConditions": [
 										"Succeeded"
 									]
@@ -267,6 +267,39 @@
 							},
 							"linkedServiceName": {
 								"referenceName": "AzureSqlDatabase1",
+								"type": "LinkedServiceReference"
+							}
+						},
+						{
+							"name": "Notebook1",
+							"type": "DatabricksNotebook",
+							"dependsOn": [
+								{
+									"activity": "Source to destination transfer",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"notebookPath": "/Users/hello.dataengineer@outlook.com/01_Landing_To_Bronze",
+								"baseParameters": {
+									"entity_name": {
+										"value": "@item().entity_name",
+										"type": "Expression"
+									}
+								}
+							},
+							"linkedServiceName": {
+								"referenceName": "AzureDatabricks1",
 								"type": "LinkedServiceReference"
 							}
 						}
